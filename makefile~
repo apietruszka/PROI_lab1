@@ -1,0 +1,8 @@
+main: Number.o main.o
+	g++ -o main Number.o main.o
+
+Number.o: Number.h Number.cpp
+	g++ -c Number.cpp
+
+Test.o: main.cpp
+	g++ -c main.cpp
